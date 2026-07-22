@@ -1,176 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Leben in Deutschland</title>
-  <meta
-    name="description"
-    content="A multilingual app for preparing for the Leben in Deutschland and Einbürgerungstest exams."
-  />
-
-  <style>
-    :root {
-      color-scheme: dark;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at 20% 10%, rgba(193, 255, 46, 0.12), transparent 34rem),
-        #090a0b;
-      color: #f5f5f2;
-    }
-
-    .page {
-      width: min(920px, calc(100% - 40px));
-      margin: 0 auto;
-      padding: 80px 0 48px;
-    }
-
-    .logo {
-      width: 76px;
-      height: 76px;
-      display: grid;
-      place-items: center;
-      border-radius: 22px;
-      background: #c7ff35;
-      color: #090a0b;
-      font-size: 42px;
-      font-weight: 800;
-      margin-bottom: 32px;
-    }
-
-    h1 {
-      margin: 0;
-      max-width: 760px;
-      font-size: clamp(42px, 8vw, 82px);
-      line-height: 0.96;
-      letter-spacing: -0.055em;
-    }
-
-    .intro {
-      max-width: 650px;
-      margin: 28px 0 64px;
-      color: #b9bbb5;
-      font-size: 20px;
-      line-height: 1.6;
-    }
-
-    .card {
-      padding: 30px;
-      margin-top: 20px;
-      border: 1px solid #282a27;
-      border-radius: 24px;
-      background: rgba(255, 255, 255, 0.035);
-    }
-
-    h2 {
-      margin: 0 0 14px;
-      font-size: 24px;
-    }
-
-    p {
-      color: #c4c6c0;
-      line-height: 1.65;
-    }
-
-    a {
-      color: #c7ff35;
-    }
-
-    footer {
-      margin-top: 64px;
-      color: #777a74;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      .page {
-        padding-top: 48px;
-      }
-
-      .card {
-        padding: 22px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leben in Deutschland</title>
+<meta name="description" content="Multilingual preparation for Leben in Deutschland and the German naturalisation test.">
+<style>
+:root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 20% 10%,rgba(193,255,46,.12),transparent 34rem),#090a0b;color:#f5f5f2}
+.page{width:min(920px,calc(100% - 40px));margin:auto;padding:30px 0 48px}.top{display:flex;justify-content:flex-end;margin-bottom:30px}
+select{border:1px solid #343731;border-radius:14px;background:#141613;color:#fff;padding:11px 14px;font:inherit}
+.logo{width:76px;height:76px;display:grid;place-items:center;border-radius:22px;background:#c7ff35;color:#090a0b;font-size:42px;font-weight:800;margin-bottom:32px}
+h1{margin:0;max-width:760px;font-size:clamp(42px,8vw,82px);line-height:.96;letter-spacing:-.055em}.intro{max-width:680px;margin:28px 0 64px;color:#b9bbb5;font-size:20px;line-height:1.6}
+.card{padding:30px;margin-top:20px;border:1px solid #282a27;border-radius:24px;background:rgba(255,255,255,.035)}h2{margin:0 0 14px;font-size:24px}
+p,li{color:#c4c6c0;line-height:1.65}ul{padding-inline-start:22px}a{color:#c7ff35}footer{margin-top:64px;color:#777a74;font-size:14px}
+[dir=rtl] .top{justify-content:flex-start}@media(max-width:600px){.page{padding-top:20px}.card{padding:22px}}
+</style>
 </head>
-
-<body>
-  <main class="page">
-    <div class="logo">L</div>
-
-    <h1>Leben in Deutschland</h1>
-
-    <p class="intro">
-      A multilingual learning app for preparing for the
-      Leben in Deutschland test and the Einbürgerungstest in Germany.
-    </p>
-
-    <section class="card" id="privacy">
-      <h2>Privacy Policy</h2>
-
-      <p>
-        Leben in Deutschland is designed to help users prepare for German
-        citizenship and integration tests.
-      </p>
-
-      <p>
-        The app does not require an account and does not collect names,
-        email addresses, phone numbers, or other directly identifying
-        personal information.
-      </p>
-
-      <p>
-        Learning progress, saved questions, mistakes, and preferences are
-        stored locally on the user’s device.
-      </p>
-
-      <p>
-        The app does not display third-party advertising and does not sell
-        personal data.
-      </p>
-
-      <p>
-        This policy may be updated if the app’s functionality or data
-        practices change.
-      </p>
-    </section>
-
-    <section class="card" id="support">
-      <h2>Support</h2>
-
-      <p>
-        For questions, feedback, or technical support, contact:
-      </p>
-
-      <p>
-        <a href="mailto:denisvasiluk@gmail.com">
-          denisvasiluk@gmail.com
-        </a>
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Disclaimer</h2>
-
-      <p>
-        Leben in Deutschland is an independent learning app and is not an
-        official product of BAMF or any other German government authority.
-      </p>
-    </section>
-
-    <footer>
-      © 2026 Leben in Deutschland
-    </footer>
-  </main>
-</body>
-</html>
+<body><main class="page">
+<div class="top"><select id="lang" aria-label="Language">
+<option value="de">Deutsch</option><option value="en">English</option><option value="uk">Українська</option>
+<option value="tr">Türkçe</option><option value="ar">العربية</option><option value="pl">Polski</option>
+<option value="ro">Română</option><option value="it">Italiano</option><option value="bg">Български</option>
+<option value="hr">Hrvatski</option><option value="sr">Српски</option><option value="fa">فارسی / دری</option>
+<option value="ku">Kurdî</option><option value="es">Español</option><option value="fr">Français</option>
+</select></div>
+<div class="logo">L</div><h1>Leben in Deutschland</h1><p class="intro" data-k="intro"></p>
+<section class="card" id="privacy"><h2 data-k="privacyTitle"></h2><p data-k="privacyIntro"></p><ul>
+<li data-k="p1"></li><li data-k="p2"></li><li data-k="p3"></li><li data-k="p4"></li><li data-k="p5"></li>
+</ul></section>
+<section class="card" id="support"><h2 data-k="supportTitle"></h2><p data-k="supportText"></p>
+<p><a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></p></section>
+<section class="card"><h2 data-k="disclaimerTitle"></h2><p data-k="disclaimerText"></p></section>
+<footer>© 2026 Leben in Deutschland</footer></main>
+<script>
+const T = {"de": {"intro": "Eine mehrsprachige Lern-App zur Vorbereitung auf den Test „Leben in Deutschland“ und den Einbürgerungstest.", "privacyTitle": "Datenschutzerklärung", "privacyIntro": "Die App unterstützt die Vorbereitung auf deutsche Integrations- und Einbürgerungstests.", "p1": "Kein Benutzerkonto erforderlich; keine Erhebung von Namen, E-Mail-Adressen, Telefonnummern oder anderen direkt identifizierenden Daten.", "p2": "Lernfortschritt, gespeicherte Fragen, Fehler und Einstellungen werden lokal auf dem Gerät gespeichert.", "p3": "Diese Daten werden nicht an den Entwickler oder an Dritte übermittelt.", "p4": "Keine Werbung von Drittanbietern und kein Verkauf personenbezogener Daten.", "p5": "Diese Erklärung kann bei Änderungen der Funktionen oder Datenverarbeitung aktualisiert werden.", "supportTitle": "Support", "supportText": "Bei Fragen, Feedback oder technischen Problemen kontaktieren Sie:", "disclaimerTitle": "Hinweis", "disclaimerText": "Eine unabhängige Lern-App; kein offizielles Produkt des BAMF oder einer anderen deutschen Behörde."}, "en": {"intro": "A multilingual learning app for preparing for the Leben in Deutschland test and the German naturalisation test.", "privacyTitle": "Privacy Policy", "privacyIntro": "The app supports preparation for German integration and naturalisation tests.", "p1": "No account is required; names, email addresses, phone numbers and other directly identifying data are not collected.", "p2": "Learning progress, saved questions, mistakes and preferences are stored locally on the device.", "p3": "This data is not transmitted to the developer or third parties.", "p4": "No third-party advertising and no sale of personal data.", "p5": "This policy may be updated if features or data practices change.", "supportTitle": "Support", "supportText": "For questions, feedback or technical support, contact:", "disclaimerTitle": "Disclaimer", "disclaimerText": "An independent learning app; not an official product of BAMF or any other German authority."}, "uk": {"intro": "Багатомовний застосунок для підготовки до тесту Leben in Deutschland та іспиту на громадянство Німеччини.", "privacyTitle": "Політика конфіденційності", "privacyIntro": "Застосунок допомагає готуватися до інтеграційного тесту та іспиту на громадянство Німеччини.", "p1": "Обліковий запис не потрібен; імена, електронні адреси, номери телефонів та інші дані прямої ідентифікації не збираються.", "p2": "Прогрес, збережені запитання, помилки й налаштування зберігаються локально на пристрої.", "p3": "Ці дані не передаються розробнику або третім сторонам.", "p4": "Немає сторонньої реклами та продажу персональних даних.", "p5": "Політика може оновлюватися при зміні функцій або обробки даних.", "supportTitle": "Підтримка", "supportText": "З питань, відгуків або технічної підтримки звертайтеся:", "disclaimerTitle": "Застереження", "disclaimerText": "Незалежний навчальний застосунок; не є офіційним продуктом BAMF чи іншого органу влади Німеччини."}, "tr": {"intro": "Leben in Deutschland ve Alman vatandaşlık sınavına hazırlık için çok dilli bir öğrenme uygulaması.", "privacyTitle": "Gizlilik Politikası", "privacyIntro": "Uygulama Almanya’daki uyum ve vatandaşlık sınavlarına hazırlığı destekler.", "p1": "Hesap gerekmez; ad, e-posta, telefon numarası veya doğrudan kimlik belirleyen veriler toplanmaz.", "p2": "İlerleme, kaydedilen sorular, hatalar ve tercihler cihazda yerel olarak saklanır.", "p3": "Bu veriler geliştiriciye veya üçüncü taraflara aktarılmaz.", "p4": "Üçüncü taraf reklamı yoktur ve kişisel veriler satılmaz.", "p5": "Özellikler veya veri uygulamaları değişirse politika güncellenebilir.", "supportTitle": "Destek", "supportText": "Sorular, geri bildirim veya teknik destek için:", "disclaimerTitle": "Yasal Uyarı", "disclaimerText": "Bağımsız bir öğrenme uygulamasıdır; BAMF’ın veya başka bir Alman kurumunun resmî ürünü değildir."}, "ar": {"intro": "تطبيق تعليمي متعدد اللغات للتحضير لاختبار Leben in Deutschland واختبار التجنّس الألماني.", "privacyTitle": "سياسة الخصوصية", "privacyIntro": "يساعد التطبيق في الاستعداد لاختبارات الاندماج والتجنّس في ألمانيا.", "p1": "لا يلزم إنشاء حساب، ولا تُجمع الأسماء أو عناوين البريد الإلكتروني أو أرقام الهاتف أو غيرها من البيانات التعريفية المباشرة.", "p2": "يُحفظ التقدم والأسئلة والأخطاء والإعدادات محليًا على الجهاز.", "p3": "لا تُرسل هذه البيانات إلى المطوّر أو إلى أطراف ثالثة.", "p4": "لا توجد إعلانات خارجية ولا بيع للبيانات الشخصية.", "p5": "قد تُحدّث السياسة عند تغيير الميزات أو ممارسات البيانات.", "supportTitle": "الدعم", "supportText": "للأسئلة أو الملاحظات أو الدعم الفني:", "disclaimerTitle": "إخلاء المسؤولية", "disclaimerText": "تطبيق تعليمي مستقل وليس منتجًا رسميًا لـ BAMF أو لأي جهة حكومية ألمانية."}, "pl": {"intro": "Wielojęzyczna aplikacja do nauki przed testem Leben in Deutschland i niemieckim egzaminem naturalizacyjnym.", "privacyTitle": "Polityka prywatności", "privacyIntro": "Aplikacja wspiera przygotowanie do niemieckich testów integracyjnych i naturalizacyjnych.", "p1": "Konto nie jest wymagane; nie zbieramy imion, e-maili, numerów telefonów ani innych danych bezpośrednio identyfikujących.", "p2": "Postępy, zapisane pytania, błędy i ustawienia są przechowywane lokalnie na urządzeniu.", "p3": "Dane nie są przekazywane deweloperowi ani osobom trzecim.", "p4": "Brak reklam zewnętrznych i sprzedaży danych osobowych.", "p5": "Polityka może zostać zaktualizowana po zmianie funkcji lub praktyk dotyczących danych.", "supportTitle": "Pomoc", "supportText": "W sprawie pytań, opinii lub pomocy technicznej:", "disclaimerTitle": "Zastrzeżenie", "disclaimerText": "Niezależna aplikacja edukacyjna; nie jest oficjalnym produktem BAMF ani innego niemieckiego urzędu."}, "ro": {"intro": "O aplicație multilingvă pentru pregătirea testului Leben in Deutschland și a examenului de cetățenie germană.", "privacyTitle": "Politica de confidențialitate", "privacyIntro": "Aplicația sprijină pregătirea pentru testele germane de integrare și naturalizare.", "p1": "Nu este necesar un cont; nu sunt colectate nume, e-mailuri, numere de telefon sau alte date de identificare directă.", "p2": "Progresul, întrebările salvate, greșelile și setările sunt stocate local pe dispozitiv.", "p3": "Datele nu sunt transmise dezvoltatorului sau terților.", "p4": "Fără reclame terțe și fără vânzarea datelor personale.", "p5": "Politica poate fi actualizată dacă funcțiile sau practicile privind datele se schimbă.", "supportTitle": "Asistență", "supportText": "Pentru întrebări, feedback sau asistență tehnică:", "disclaimerTitle": "Declinarea răspunderii", "disclaimerText": "Aplicație educațională independentă; nu este un produs oficial BAMF sau al altei autorități germane."}, "it": {"intro": "Un’app multilingue per prepararsi al test Leben in Deutschland e all’esame di naturalizzazione tedesco.", "privacyTitle": "Informativa sulla privacy", "privacyIntro": "L’app supporta la preparazione ai test tedeschi di integrazione e naturalizzazione.", "p1": "Non serve un account; non vengono raccolti nomi, e-mail, numeri di telefono o altri dati direttamente identificativi.", "p2": "Progressi, domande salvate, errori e impostazioni sono memorizzati localmente sul dispositivo.", "p3": "I dati non sono trasmessi allo sviluppatore o a terzi.", "p4": "Nessuna pubblicità di terzi e nessuna vendita di dati personali.", "p5": "L’informativa può essere aggiornata se cambiano funzioni o pratiche sui dati.", "supportTitle": "Assistenza", "supportText": "Per domande, feedback o assistenza tecnica:", "disclaimerTitle": "Esclusione di responsabilità", "disclaimerText": "App educativa indipendente; non è un prodotto ufficiale del BAMF o di un’altra autorità tedesca."}, "bg": {"intro": "Многоезично приложение за подготовка за теста Leben in Deutschland и изпита за германско гражданство.", "privacyTitle": "Политика за поверителност", "privacyIntro": "Приложението подпомага подготовката за германските изпити за интеграция и натурализация.", "p1": "Не е нужен акаунт; не се събират имена, имейли, телефони или други пряко идентифициращи данни.", "p2": "Напредъкът, запазените въпроси, грешките и настройките се пазят локално на устройството.", "p3": "Данните не се изпращат на разработчика или на трети страни.", "p4": "Няма външни реклами и продажба на лични данни.", "p5": "Политиката може да бъде актуализирана при промяна на функциите или обработката на данни.", "supportTitle": "Поддръжка", "supportText": "За въпроси, обратна връзка или техническа помощ:", "disclaimerTitle": "Отказ от отговорност", "disclaimerText": "Независимо учебно приложение; не е официален продукт на BAMF или друга германска институция."}, "hr": {"intro": "Višejezična aplikacija za pripremu testa Leben in Deutschland i njemačkog ispita za državljanstvo.", "privacyTitle": "Pravila privatnosti", "privacyIntro": "Aplikacija pomaže u pripremi za njemačke integracijske i naturalizacijske testove.", "p1": "Račun nije potreban; ne prikupljaju se imena, e-adrese, telefonski brojevi ni drugi izravno identifikacijski podaci.", "p2": "Napredak, spremljena pitanja, pogreške i postavke čuvaju se lokalno na uređaju.", "p3": "Podaci se ne prenose razvojnom programeru ni trećim stranama.", "p4": "Nema oglasa trećih strana ni prodaje osobnih podataka.", "p5": "Pravila se mogu ažurirati ako se promijene funkcije ili obrada podataka.", "supportTitle": "Podrška", "supportText": "Za pitanja, povratne informacije ili tehničku podršku:", "disclaimerTitle": "Odricanje od odgovornosti", "disclaimerText": "Neovisna obrazovna aplikacija; nije službeni proizvod BAMF-a ni drugog njemačkog tijela."}, "sr": {"intro": "Вишејезична апликација за припрему теста Leben in Deutschland и немачког испита за држављанство.", "privacyTitle": "Политика приватности", "privacyIntro": "Апликација помаже у припреми за немачке интеграционе и натурализационе тестове.", "p1": "Налог није потребан; не прикупљају се имена, е-адресе, бројеви телефона ни други директно идентификујући подаци.", "p2": "Напредак, сачувана питања, грешке и подешавања чувају се локално на уређају.", "p3": "Подаци се не шаљу програмеру ни трећим странама.", "p4": "Нема огласа трећих страна ни продаје личних података.", "p5": "Политика може бити ажурирана ако се промене функције или обрада података.", "supportTitle": "Подршка", "supportText": "За питања, повратне информације или техничку подршку:", "disclaimerTitle": "Одрицање од одговорности", "disclaimerText": "Независна образовна апликација; није званични производ BAMF-а нити другог немачког органа."}, "fa": {"intro": "یک اپلیکیشن چندزبانه برای آمادگی آزمون Leben in Deutschland و آزمون تابعیت آلمان.", "privacyTitle": "سیاست حفظ حریم خصوصی", "privacyIntro": "این اپلیکیشن به آمادگی برای آزمون‌های ادغام و تابعیت آلمان کمک می‌کند.", "p1": "حساب کاربری لازم نیست و نام، ایمیل، شماره تلفن یا داده‌های شناسایی مستقیم جمع‌آوری نمی‌شود.", "p2": "پیشرفت، پرسش‌های ذخیره‌شده، اشتباهات و تنظیمات به‌صورت محلی روی دستگاه ذخیره می‌شوند.", "p3": "داده‌ها به توسعه‌دهنده یا اشخاص ثالث ارسال نمی‌شوند.", "p4": "تبلیغات شخص ثالث و فروش داده‌های شخصی وجود ندارد.", "p5": "در صورت تغییر امکانات یا شیوه‌های داده، سیاست ممکن است به‌روزرسانی شود.", "supportTitle": "پشتیبانی", "supportText": "برای پرسش، بازخورد یا پشتیبانی فنی:", "disclaimerTitle": "سلب مسئولیت", "disclaimerText": "اپلیکیشن آموزشی مستقل است و محصول رسمی BAMF یا نهاد دولتی آلمان نیست."}, "ku": {"intro": "Sepana pirzimanî ji bo amadekariya testa Leben in Deutschland û azmûna welatîbûna Almanî.", "privacyTitle": "Polîtîkaya nepenîtiyê", "privacyIntro": "Sepan amadekariya testên entegrasyon û welatîbûna Almanyayê piştgirî dike.", "p1": "Hesab ne pêwîst e; nav, e-name, telefon an daneyên nasînê nayên berhevkirin.", "p2": "Pêşketin, pirsên tomarkirî, şaşî û vebijêrk li ser amûrê tên parastin.", "p3": "Dane ji pêşdebir an aliyên sêyem re nayên şandin.", "p4": "Reklama aliyên sêyem û firotina daneyên kesane tune ye.", "p5": "Polîtîka dikare bi guhertina taybetmendî an daneyan were nûkirin.", "supportTitle": "Piştgirî", "supportText": "Ji bo pirs, nêrîn an piştgiriya teknîkî:", "disclaimerTitle": "Ragihandina berpirsiyariyê", "disclaimerText": "Sepanek hînbûnê ya serbixwe ye; ne berhema fermî ya BAMF an saziyek Almanî ye."}, "es": {"intro": "Una aplicación multilingüe para preparar el test Leben in Deutschland y el examen de naturalización alemán.", "privacyTitle": "Política de privacidad", "privacyIntro": "La aplicación ayuda a preparar las pruebas alemanas de integración y naturalización.", "p1": "No se requiere cuenta; no se recopilan nombres, correos, teléfonos ni otros datos directamente identificables.", "p2": "El progreso, las preguntas guardadas, los errores y los ajustes se almacenan localmente en el dispositivo.", "p3": "Los datos no se transmiten al desarrollador ni a terceros.", "p4": "Sin publicidad de terceros ni venta de datos personales.", "p5": "La política puede actualizarse si cambian las funciones o las prácticas de datos.", "supportTitle": "Soporte", "supportText": "Para preguntas, comentarios o asistencia técnica:", "disclaimerTitle": "Aviso legal", "disclaimerText": "Aplicación educativa independiente; no es un producto oficial de BAMF ni de otra autoridad alemana."}, "fr": {"intro": "Une application multilingue pour préparer le test Leben in Deutschland et l’examen de naturalisation allemand.", "privacyTitle": "Politique de confidentialité", "privacyIntro": "L’application aide à préparer les tests allemands d’intégration et de naturalisation.", "p1": "Aucun compte requis; aucun nom, e-mail, téléphone ou autre donnée directement identifiable n’est collecté.", "p2": "La progression, les questions enregistrées, les erreurs et les réglages sont stockés localement sur l’appareil.", "p3": "Les données ne sont transmises ni au développeur ni à des tiers.", "p4": "Aucune publicité tierce et aucune vente de données personnelles.", "p5": "La politique peut être mise à jour si les fonctions ou pratiques de données changent.", "supportTitle": "Assistance", "supportText": "Pour toute question, remarque ou assistance technique:", "disclaimerTitle": "Avertissement", "disclaimerText": "Application éducative indépendante; ce n’est pas un produit officiel du BAMF ni d’une autre autorité allemande."}};
+const rtl=new Set(["ar","fa"]);const s=document.getElementById("lang");
+function pick(){const x=localStorage.getItem("leben-lang");if(x&&T[x])return x;for(const n of(navigator.languages||[navigator.language||"de"])){const c=n.toLowerCase().split("-")[0];if(T[c])return c}return"de"}
+function apply(l){const d=T[l]||T.de;document.documentElement.lang=l;document.documentElement.dir=rtl.has(l)?"rtl":"ltr";s.value=l;document.querySelectorAll("[data-k]").forEach(e=>e.textContent=d[e.dataset.k]||"");localStorage.setItem("leben-lang",l)}
+s.addEventListener("change",e=>apply(e.target.value));apply(pick());
+</script></body></html>
