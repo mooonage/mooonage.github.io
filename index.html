@@ -359,6 +359,32 @@
       .app-icon { animation: none; }
       html { scroll-behavior: auto; }
     }
+  
+    .nav select {
+      appearance: none;
+      min-width: 170px;
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 14px;
+      background:
+        linear-gradient(45deg, transparent 50%, #d99c2b 50%) calc(100% - 18px) 50% / 5px 5px no-repeat,
+        linear-gradient(135deg, #d99c2b 50%, transparent 50%) calc(100% - 13px) 50% / 5px 5px no-repeat,
+        rgba(255,255,255,.05);
+      color: var(--ink);
+      padding: 11px 38px 11px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .brand-mark,
+    .app-icon {
+      background: transparent !important;
+    }
+
+    .icon-stage {
+      background: transparent !important;
+    }
+
   </style>
 </head>
 
@@ -366,7 +392,9 @@
   <main class="page">
     <nav class="nav">
       <div class="brand">
-        <img class="brand-mark" src="leben-logo.png"
+        <img class="brand-mark" src="leben-logo.png" alt="" />
+        <span class="brand-title">Leben in Deutschland</span>
+      </div>
 
       <select id="lang" aria-label="Language">
         <option value="de">Deutsch</option>
@@ -407,6 +435,8 @@
         <img
           class="app-icon"
           src="leben-logo.png"
+          alt="Leben in Deutschland app icon"
+        />
       </div>
     </section>
 
